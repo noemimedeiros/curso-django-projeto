@@ -6,9 +6,3 @@ def home(request):
         'name': 'Noemi Medeiros',
     })
 
-def sobre(request):
-    return HttpResponse('Sobre')
-
-def contato(request):
-    return HttpResponse('Contato')
-

@@ -1,15 +1,16 @@
 {% include 'coffeeshop/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fas fa-coffee main-logo-icon" aria-hidden="true"></i>
-                    <span class="main-logo-text">Coffe Shop</span> 
-                </a>
-            </h1>
-        </div>
-    </header>
+    {% include 'coffeeshop/partials/header.html' %}
+    <div class="search-container">
+
+    </div>
+    <div class="container">
+        <form action="" class="search-form">
+            <input type="search" class="search-input" name="search">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,15 @@
+{% include 'coffeeshop/partials/head.html' %}
+
+<body>
+    {% include 'coffeeshop/partials/header.html' %}
+    {% include 'coffeeshop/partials/search.html' %}
+    
+    <main class="content-container">
+        {% block content %}{% endblock content %}
+    </main>
+
+    {% include 'coffeeshop/partials/footer.html' %}
+    
+</body>
+
+</html>

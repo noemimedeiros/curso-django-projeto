@@ -1,16 +1,7 @@
-{% include 'coffeeshop/partials/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
-    {% include 'coffeeshop/partials/header.html' %}
-    {% include 'coffeeshop/partials/search.html' %}
-
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-            {% include 'coffeeshop/partials/recipe.html' %}
-        </div>
-    </main>
-
-    {% include 'coffeeshop/partials/footer.html' %}
-</body>
-
-</html>
+{% block content %}
+<div class="main-content main-content-detail container">
+    {% include 'coffeeshop/partials/recipe.html' %}
+</div>
+{% endblock content %}

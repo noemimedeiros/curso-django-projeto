@@ -153,7 +153,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .recipe img{
+    /* width: 100%; */
     max-width: 100%;
+    /* max-height: 335px;
+    object-fit: cover; */
 }
 
 .recipe-list-item{
@@ -208,6 +211,7 @@ h1,h2,h3,h4,h5,h6{
     flex-flow: row wrap;
     padding: var(--spacing-gutter-medium);
     font-size: 1.5rem;
+    background: rgb(228, 224, 222);
 }
 
 .recipe-meta{
@@ -251,6 +255,23 @@ h1,h2,h3,h4,h5,h6{
     padding: var(--spacing-gutter-medium);
 }
 
+.preparation-steps h1,
+.preparation-steps h2,
+.preparation-steps h3,
+.preparation-steps h4,
+.preparation-steps h5,
+.preparation-steps h6,
+.preparation-steps p,
+.preparation-steps pre {
+    margin: 2rem 0;
+}
+
+.preparation-steps ol,
+.preparation-steps ul {
+    margin: 2rem;
+    padding: 0 2rem;
+}
+
 .main-footer{
     display: flex;
     align-items: center;
@@ -268,4 +289,18 @@ h1,h2,h3,h4,h5,h6{
 
 .main-footer a:hover{
     filter: brightness(.8);
+}
+
+/* Generics */
+
+.center{
+    text-align: center;
+}
+
+.m-x {
+  margin: 0 var(--spacing-gutter-medium); 
+}
+
+.m-y {
+    margin: var(--spacing-gutter-medium) 0; 
 }
